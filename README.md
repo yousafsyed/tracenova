@@ -1,3 +1,5 @@
+[![CI-CD](https://github.com/yousafsyed/tracenova/actions/workflows/ci-cd-workflow.yaml/badge.svg)](https://github.com/yousafsyed/tracenova/actions/workflows/ci-cd-workflow.yaml)
+
 # TraceNova
 
 TraceNova is a Node.js package that simplifies setting up OpenTelemetry tracing and instrumentation. By importing "tracenova" at the beginning of your ES6 module-based project, it enables telemetry and tracing with minimal effort.
