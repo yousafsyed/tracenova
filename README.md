@@ -67,7 +67,7 @@ instrumentations: [
 | TraceNova Version | OpenTelemetry Version | ES6 Modules Support |
 | ----------------- | --------------------- | ------------------- |
 | 1.0.0             | 1.0.0 - 1.5.0          | Yes                 |
-|
+
 
 ## Contributing
 
