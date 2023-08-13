@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "outDir": "./build",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "target": "esnext",
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "./src/tests/",
+    "./tests/",
+    "./coverage/",
+    "node_modules",
+    "opentelemetry.cjs",
+    "**/*.spec.ts",
+    "build",
+    "jest.config.js",
+    "examples",
+    "tests"
+  ],
+}

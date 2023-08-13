@@ -1,0 +1,50 @@
+{
+  "name": "tracenova",
+  "version": "1.0.0",
+  "description": "Sourcecode instrumentation with Open-Telemetry for nodejs",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc -p .",
+    "test": "NODE_OPTIONS=\"--experimental-vm-modules\" jest --coverage --collectCoverageFrom=src/**/*.ts --verbose",
+    "lint": "npx eslint --fix ./src --ext .ts",
+    "dev": "npx ts-node --esm src/Tracer.ts"
+  },
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "default": "./build/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yousafsyed/tracenova.git"
+  },
+  "author": "Yousaf Syed",
+  "dependencies": {
+    "@opentelemetry/api": "^1.4.1",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.41.2",
+    "@opentelemetry/instrumentation": "^0.41.2",
+    "@opentelemetry/instrumentation-http": "^0.41.2",
+    "@opentelemetry/resources": "^1.15.2",
+    "@opentelemetry/sdk-node": "^0.41.2",
+    "@opentelemetry/sdk-trace-base": "^1.15.2",
+    "@opentelemetry/sdk-trace-node": "^1.15.2",
+    "@opentelemetry/semantic-conventions": "^1.15.2",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "@types/node": "^18.11.15",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.29.0",
+    "jest": "^29.6.2",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "license": "MIT"
+}
