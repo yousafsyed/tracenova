@@ -26,7 +26,7 @@ TraceNova will automatically set up OpenTelemetry tracing and instrumentation ba
 
 ### Instrumenting Methods and Functions
 
-You can use TraceNova's \`@instrument\` decorator to instrument both class methods and simple functions with tracing:
+You can use TraceNova's `@instrument` decorator to instrument both class methods and simple functions with tracing:
 
 ```javascript
 import { instrument } from 'tracenova';
